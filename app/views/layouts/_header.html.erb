@@ -1,0 +1,22 @@
+
+
+    <nav class="container mx-auto flex justify-between py-4 px-4 items-center bg-white relative z-50">
+
+        <div class="logo">
+            <a href="#">
+                <%# <img src="/assets/logo.svg" class="w-24"> %>
+                <%= link_to image_tag('logo.svg'), root_path, :class => 'w-24' %>
+            </a>
+        </div>
+
+        <div class="navigation">
+            <img src="/assets/icon-hamburger.svg" class="block md:hidden cursor-pointer" alt="">
+            <ul class="justify-between hidden md:flex">
+                <li class="px-4 py-2 ml-8 uppercase font-semibold text-gray-700"><%= link_to 'How We Work', how_we_work_path %></li>
+                <li class="px-4 py-2 ml-8 uppercase font-semibold text-gray-700"> <%= link_to 'Blog', blog_path %></li>
+                <li class="px-4 py-2 ml-8 uppercase font-semibold text-gray-700"> <%= link_to 'Account', account_path %></li>
+                <button class="px-6 py-2 ml-8 uppercase font-semibold text-gray-700 border-2 border-primary-violet"> <%= link_to 'View Plans', plans_path %></li>
+            </ul>
+        </div>
+
+    </nav>
